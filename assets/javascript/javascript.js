@@ -11,3 +11,11 @@ const servResults = $.ajax({
     $("#playerCount").text(`${stats.players.online} / ${stats.players.max} players online.`);
 
 });
+
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
