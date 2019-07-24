@@ -27,19 +27,16 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Join</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Frequent Questions
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Coming</a>
+                        <a class="dropdown-item" href="#">Soon</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">An Odyssey FAQ</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -48,7 +45,8 @@
             </ul>
             <hr>
             <div class="">
-                <span id="playerCount" class="text-muted">Loading player count...</span>
+                <span id="playerTooltip"><span id="playerCount" class="text-muted">Loading player count...</span><span
+                        class="tooltiptext" id="livePlayers"></span></span>
             </div>
         </div>
     </nav>
@@ -58,7 +56,10 @@
             <img src="./assets/images/odysseylogo-white.svg" alt="Odyssey Logo" id="jumbotron-logo" class="mx-auto">
             <!-- <hr class="border-white"> -->
             <p class="lead">Begin your minecraft Odyssey!</p>
-            <button type="button" class="btn btn-primary btn-lg" id="btn1" onClick="copyToClipboard(`#btn1`)">playodyssey.net</button>
+            <div class="myTooltip">
+                <button type="button" class="btn btn-primary btn-lg" id="btn1" onClick="copyToClipboard(`#btn1`)"> <span
+                        class="tooltiptext playBtn">Copy to clipboard</span> playodyssey.net</button>
+            </div>
         </div>
     </div>
 
@@ -117,9 +118,13 @@
 
     <div class="bg-primary text-center py-5">
         <div class="container">
-            <h4 class="text-light mb-4">There's plenty of things to do in Odyssey. Why not join us and try them out?</h4>
+            <h4 class="text-light mb-4">There's plenty of things to do in Odyssey. Why not join us and try them out?
+            </h4>
             <!-- <hr class="border-white w-25 my-4"> -->
-            <button type="button" class="btn btn-light btn-lg" id="btn2" onClick="copyToClipboard(`#btn2`)">playodyssey.net</button>
+            <div class="myTooltip">
+                <button type="button" class="btn btn-light btn-lg" id="btn1" onClick="copyToClipboard(`#btn1`)"> <span
+                        class="tooltiptext playBtn">Copy to clipboard</span> playodyssey.net</button>
+            </div>
             <!-- <hr class="border-white w-25 my-4"> -->
         </div>
     </div>
@@ -173,7 +178,7 @@
 
     <div class="bg-dark">
         <footer class="container text-white text-center text-muted">
-                <p class="py-4 m-0">&copy; 2019. All Rights Reserved.</p>
+            <p class="py-4 m-0">&copy; 2019. All Rights Reserved.</p>
         </footer>
     </div>
 

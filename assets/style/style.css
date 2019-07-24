@@ -15,3 +15,85 @@
     background-size: cover;
     background-position: center;
 }
+
+#playerTooltip {
+    position: relative;
+}
+
+#playerTooltip .tooltiptext {
+    visibility: hidden;
+    min-width: 70px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -35px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.75em;
+}
+
+#playerTooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+#playerTooltip .tooltiptext p {
+    margin-bottom: 3px;
+}
+
+#playerTooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Copied! tooltips */
+
+.myTooltip {
+    position: relative;
+}
+
+.myTooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 130%;
+    left: 50%;
+    margin-left: -50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.5em;
+}
+
+.myTooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.myTooltip button:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
