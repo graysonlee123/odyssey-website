@@ -1,3 +1,17 @@
-body {
-    background: #eee;
+#brand-logo {
+    width: 100px;
+    height: auto;
+}
+
+#jumbotron-logo {
+    width: 50%;
+    min-width: 250px;
+    height: auto;
+    min-height: 400px;
+}
+
+.jumbotron {
+    background-image: url(../images/jumbotron.jpg);
+    background-size: cover;
+    background-position: center;
 }

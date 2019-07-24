@@ -8,17 +8,17 @@
 let servVersion, servHostName, servMOTD;
 
 
-const servResults = $.ajax({
-    url: "https://api.mcsrvstat.us/2/playodyssey.net",
-    method: "GET"
-}).then(function (stats) {
-    console.log(stats);
-    servVersion = stats.version;
-    servHostName = stats.hostname;
-    servMOTD = stats.motd.clean;
+// const servResults = $.ajax({
+//     url: "https://api.mcsrvstat.us/2/playodyssey.net",
+//     method: "GET"
+// }).then(function (stats) {
+//     console.log(stats);
+//     servVersion = stats.version;
+//     servHostName = stats.hostname;
+//     servMOTD = stats.motd.clean;
 
-    $("#mainCardSubtitle").text(`${stats.players.online} / ${stats.players.max}`);
+//     $("#mainCardSubtitle").text(`${stats.players.online} / ${stats.players.max}`);
 
-});
+// });
 
 // $("body").append(servVersion, servHostName, servMOTD);
